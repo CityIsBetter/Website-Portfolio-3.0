@@ -1,8 +1,8 @@
 import React, { forwardRef } from 'react'
 import styles from './style.module.scss';
 import { useInView, motion } from 'framer-motion';
-import { useRef, useEffect } from 'react';
-import { slideUp } from './anim';
+import { useRef } from 'react';
+import { slideUp } from '@components/anim/anim.js';
 import Line from '@/components/Line';
 import Magnetic from '@/components/Magnetic';
 import Link from 'next/link';

@@ -1,10 +1,8 @@
 "use client";
 import React, { useRef } from 'react'
 import styles from './style.module.scss'
-import { Parallax } from 'react-parallax'
 import { useScroll, motion, useTransform } from 'framer-motion'
 
-import Line from '@/components/Line';
 import Magnetic from '@/components/Magnetic';
 
 const projects = [

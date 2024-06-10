@@ -5,7 +5,6 @@ import Nav from '../nav'
 import { AnimatePresence } from 'framer-motion'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import Magnetic from '../Magnetic';
 
 const Header = () => {
 
