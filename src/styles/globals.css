@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+
+  
+  /* -ms-overflow-style: none; 
+  scrollbar-width: none;  */
+
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body{
+  overflow: hidden;
+}
