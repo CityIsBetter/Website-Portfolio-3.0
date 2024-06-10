@@ -1,11 +1,13 @@
 import React, { forwardRef } from 'react'
-import styles from './style.module.scss';
 import { useInView, motion } from 'framer-motion';
 import { useRef } from 'react';
-import { slideUp } from '@components/anim/anim.js';
+import Link from 'next/link';
+
+import styles from './style.module.scss';
+import { slideUp } from '@/components/anim/anim';
 import Line from '@/components/Line';
 import Magnetic from '@/components/Magnetic';
-import Link from 'next/link';
+
 
 
 const Description = forwardRef(function index(props, ref) {

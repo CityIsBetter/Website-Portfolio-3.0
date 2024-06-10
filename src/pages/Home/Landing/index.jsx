@@ -3,7 +3,7 @@ import styles from './style.module.scss';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useScroll, useTransform, motion, useInView } from 'framer-motion';
 import gsap from "gsap";
-import { slideUp } from '@components/anim/anim.js';
+import { slideUp } from '@/components/anim/anim';
 
 const Landing = () => {
     const firstText = useRef(null);
