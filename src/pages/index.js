@@ -5,7 +5,6 @@ import Description from "./Home/description";
 import Slider from "@/components/slider";
 import Contact from "@/components/contact";
 import Landing from "./Home/Landing";
-import Navbar from "@/components/navbar";
 
 import Curve from "@/components/Curve";
 

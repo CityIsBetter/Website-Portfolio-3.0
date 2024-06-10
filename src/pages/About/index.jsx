@@ -68,7 +68,7 @@ const About = () => {
                 <br />
                 <span className={styles.span}>Always growing and learning...</span>
               </p>
-              <div className={styles.imgContainer}><img alt='protrait' src='/assets/temp.jpg'/></div>
+              <div className={styles.imgContainer}><img alt='protrait' src='/assets/temp.JPG'/></div>
           </div>
         </div>
       </div>

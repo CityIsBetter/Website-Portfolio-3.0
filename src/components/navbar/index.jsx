@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className={styles.main}>
       <div className={styles.navbar}>
           <div className={styles.logo}>
-            <Link href='/'><img alt="logo" src="/assets/logo.png" draggable={false} /></Link>
+            <Link href='/'><img alt="logo" src="/assets/Logo.png" draggable={false} /></Link>
           </div>
           <div className={styles.nav}>
           <Magnetic><div className={styles.el}>
