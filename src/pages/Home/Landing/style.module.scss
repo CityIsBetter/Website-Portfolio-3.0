@@ -69,6 +69,9 @@
     .location{
       position: absolute;
       top: calc(50% - 40px);
+      @media (max-width:500px) {
+        top: 15%;
+      }
     }
 
     img{
@@ -79,6 +82,10 @@
         position: absolute;
         top: calc(100vh - 295px);
         user-select: none;
+
+        @media (max-width: 1200px){
+          top: calc(100vh - 180px);
+        }
       }
       
       .slider{
@@ -93,6 +100,10 @@
         font-size: 256px;
         font-weight: 300;
         padding-right: 50px;
+
+        @media (max-width: 1200px) {
+          font-size: 156px;
+        }
       }
       
       .slider p:nth-of-type(2){

@@ -66,7 +66,7 @@ const Description = forwardRef(function index(props, ref) {
             <p>
             {
               phraseA.split(" ").map( (word, index) => {
-                  return <span className={styles.mask}><motion.span variants={slideUp} custom={index} animate={isAInView ? "open" : "closed"} key={index}>{word}</motion.span></span>
+                  return <span className={styles.mask} key={index}><motion.span variants={slideUp} custom={index} animate={isAInView ? "open" : "closed"} key={index}>{word}</motion.span></span>
               })
             }
             </p>
@@ -81,7 +81,7 @@ const Description = forwardRef(function index(props, ref) {
               <Link href={"/Works"}><Magnetic><div ref={ref} className={styles.button}>My Works</div></Magnetic> </Link>             
             </div>            <p>{
               phraseW.split(" ").map( (word, index) => {
-                  return <span className={styles.mask}><motion.span variants={slideUp} custom={index} animate={isWInView ? "open" : "closed"} key={index}>{word}</motion.span></span>
+                  return <span className={styles.mask} key={index}><motion.span variants={slideUp} custom={index} animate={isWInView ? "open" : "closed"} key={index}>{word}</motion.span></span>
               })
             }</p>
           </div>

@@ -77,7 +77,7 @@ const Works = () => {
               </div>
             </Magnetic>
           </motion.div>
-            <Line scolor={"#fff"} />
+            <Line scolor={"#fff"} w={.8}/>
             <div className={styles.scrolldown}>
                 <div className={styles.chevrons}>
                     <div className={styles.chevrondown}></div>

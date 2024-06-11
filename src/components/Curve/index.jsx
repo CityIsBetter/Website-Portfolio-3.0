@@ -43,7 +43,7 @@ export default function Curve({children, backgroundColor}) {
     
     return (
     <div className='main curve'>
-       <div style={{opacity: dimensions.width == null ? 1 : 0, backgroundColor: {backgroundColor}}} className='background'/>
+       <div style={{opacity: dimensions.width == null ? 1 : 0}} className='background'/>
        <motion.p className='route' {...anim(text)}>
             {routes[router.route]}
         </motion.p>

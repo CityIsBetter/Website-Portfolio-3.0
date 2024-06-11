@@ -1,6 +1,6 @@
+'use client';
 import "@/styles/globals.css";
 import "@/styles/styles.scss";
-import Head from "next/head";
 
 import Navbar from "@/components/navbar";
 import Preloader from "@/components/Preloader";
@@ -46,18 +46,14 @@ export default function App({ Component, pageProps, router }) {
 
   return(
   <>
-    <Head>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-    </Head>
     <AnimatePresence mode="wait">
       {isLoading && <Preloader />}
     </AnimatePresence>
     <Navbar />
     <Header />
     <AnimatePresence mode="wait">
-    <Component key={router.route} {...pageProps} /></AnimatePresence>
+      <Component key={router.route} {...pageProps} />
+    </AnimatePresence>
   </>
   )
 }
