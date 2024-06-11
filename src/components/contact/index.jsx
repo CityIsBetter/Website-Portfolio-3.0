@@ -63,7 +63,7 @@ const Contact = () => {
                     <h2>Let's Have</h2>
                     </span>
                     <h2>a Chat</h2>
-                    <div className={styles.line}><Line scolor={"#fff"} sright={"100"}/></div>
+                    <div className={styles.line}><Line scolor={"#fff"} sright={"100"} w={.8}/></div>
                     <motion.div style={{x}} className={styles.buttonContainer}>
                         <Link href={"/Contact"}><Magnetic>
                             <div className={styles.button}>

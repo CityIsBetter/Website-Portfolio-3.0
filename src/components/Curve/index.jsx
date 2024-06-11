@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router';
 import { text, curve, translate } from './anim';
+import './style.module.scss'
 
 const routes = {
     "/": "Home",

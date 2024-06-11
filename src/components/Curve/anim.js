@@ -33,7 +33,8 @@ export const curve = (initialPath, targetPath) => {
 
 export const translate = {
     initial: {
-        top: "-300px"
+        top: "-300px",
+        display: "block"
     },
     enter: {
         top: "-100vh",
