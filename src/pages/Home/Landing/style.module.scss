@@ -1,8 +1,8 @@
-.page{
+.Landing{
+    position: relative;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    z-index: 1;
+    overflow: hidden;
     .header_bg{
         background: radial-gradient(50% 50% at 50% 50%, #5E6FDD 0%, #4D61DF 74.21%, #455CE9 100%);
     
@@ -38,6 +38,9 @@
         font-size: 24px;
         display: flex;
         max-width: 500px;
+        @media (max-width: 1200px){
+          display: none;
+        }
         p{
         display: flex;
         flex-wrap: wrap;

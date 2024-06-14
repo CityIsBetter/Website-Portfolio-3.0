@@ -56,7 +56,7 @@ export default function Curve({children, backgroundColor}) {
     )
 }
 
-const SVG = ({height, width}) => {
+const SVG = ({width, height}) => {
 
     const initialPath = `
         M0 300 
@@ -73,7 +73,6 @@ const SVG = ({height, width}) => {
         Q${width/2} ${height} 0 ${height}
         L0 0
     `
-
     return (
         <motion.svg {...anim(translate)} className="psvg">
             <motion.path {...anim(curve(initialPath, targetPath))} />

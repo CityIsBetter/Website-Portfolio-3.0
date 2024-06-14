@@ -95,7 +95,7 @@ const Landing = () => {
     const y = useTransform(scrollYProgress, [0, 1], ["0vh", "25vh"]);
 
     return (
-    <main className={styles.page} ref={container}>
+    <main className={styles.Landing} ref={container}>
         <div className={styles.header_bg}> 
             <div className={styles.parallaxContainer}>
                 <motion.div style={{y}}>
@@ -117,8 +117,8 @@ const Landing = () => {
       </div>
         <div className={styles.sliderContainer}>
             <div ref={slider} className={styles.slider}>
-                <p ref={firstText}>Student - Developer - Tech Enthusiast - </p>
-                <p ref={secondText}>Student - Developer - Tech Enthusiast - </p>
+                <p ref={firstText}>Student ∘ Developer ∘ Tech Enthusiast ∘ </p>
+                <p ref={secondText}>Student ∘ Developer ∘ Tech Enthusiast ∘ </p>
             </div>
         </div>
     </main>

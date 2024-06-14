@@ -5,6 +5,19 @@ import Nav from '../nav'
 import { AnimatePresence } from 'framer-motion'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import Magnetic from '../Magnetic';
+
+const Rounded = ({children}) => {
+  return (
+    <Magnetic>
+      <div className={styles.button}>
+          {
+            children
+          }
+      </div>
+    </Magnetic>
+  )
+}
 
 const Header = () => {
 
@@ -28,9 +41,11 @@ const Header = () => {
 
   return (
     <>
-      <div ref={burger} onClick={() => setIsActive(!isActive)} className={styles.button}>
+    <div className={styles.buttonContainer} ref={burger} onClick={() => setIsActive(!isActive)}>
+      <Rounded  >
           <div className={`${styles.burger} ${isActive ? styles.burgerActive : ''}`} ></div>
-      </div>
+      </Rounded>
+    </div>
     <AnimatePresence mode='wait'>
     {isActive && <Nav close={() => setIsActive(!isActive)}/>}
     </AnimatePresence>

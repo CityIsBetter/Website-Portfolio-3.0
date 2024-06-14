@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useRef } from 'react'
+import { useScroll, useTransform, motion } from 'framer-motion';
 import Head from 'next/head';
 
+import styles from './styles.module.scss';
 import Landing from './Landing';
 import Description from './description';
 import Slider from '@/components/slider';
@@ -8,6 +10,15 @@ import Contact from '@/components/contact';
 import Curve from '@/components/Curve';
 
 const Main = () => {
+
+  const container = useRef(null);
+
+    const { scrollYProgress } = useScroll({
+        target: container,
+        offset: ["start end", "end start"]
+    });
+
+  const height = useTransform(scrollYProgress, [0, 0.9], [50, 0]);
   return (
     <>
       <Head>
@@ -17,10 +28,14 @@ const Main = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Curve>
-          <Landing />
+        <main className={styles.main}>
+          <Landing /> 
           <Description />
           <Slider />
-          <Contact/>
+          <motion.div style={{height}} className={styles.circleContainer}>
+            <div className={styles.circle}></div>
+          </motion.div>
+          <Contact/></main>
       </Curve>
     </>
   )

@@ -1,0 +1,21 @@
+.circleContainer{
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+
+    .circle{
+        height: 2000%;
+        width: 100vw;
+        left: 0%;
+        border-radius: 0 0 50% 50%;
+        background-color: white;
+        z-index: 1;
+        position: absolute;
+        box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
+    }
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
