@@ -22,8 +22,7 @@
             .buttonContainer{
                 z-index: 1;
                 position: absolute;
-                left: calc(60%); 
-                // bottom: -38vh;
+                right: 20vw;
             }
 
             .button{
@@ -58,6 +57,19 @@
                         height: 50px;
                     }
                 }
+                @media (max-width:576px){
+                    margin-right: 4vh;
+                    margin-top: 34vh;
+                }
+                @media (max-width:430px){
+                    margin-top: 33vh;
+                    width: 80px;
+                    height: 80px;
+                    svg{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
             }
         }
 
@@ -67,8 +79,14 @@
             font-size: 64px;
             font-weight: 100;
             margin-bottom: 12px;
+            
             @media (max-width:700px){
                 font-size: 48px;
+                margin-right: 120px;
+            }
+            @media (max-width:430px){
+                font-size: 40px;
+                margin-right: 60px;
             }
         }
         
@@ -77,9 +95,7 @@
             flex-direction: column;
             width: 80vw;
             margin-top: 20vh;
-            @media (max-width:525px){
-                font-size: 12px;
-            }
+            
             .labels{
                 display: flex;
                 justify-content: space-between;
@@ -89,6 +105,12 @@
                     font-size: 20px;
                     font-weight: 400;
                     color: #E5554E;
+                    @media (max-width:560px){
+                        font-size: 18px;
+                    }   
+                    @media (max-width:430px){
+                        font-size: 14px;
+                    } 
                 }
             }
             label{
@@ -96,9 +118,14 @@
                 font-size: 32px;
                 margin: 24px 0 0 0;
                 color: #fff;
+                @media (max-width:560px){
+                    font-size: 24px;
+                }
+                @media (max-width:430px){
+                    font-size: 18px;
+                } 
             }
             input, textarea{
-                //z-index: 300;
                 margin-top: 24px;
                 background-color: transparent;
                 padding: 24px;
@@ -107,6 +134,14 @@
                 font-weight: 400;
                 color: #57585A;
                 outline: none;
+                @media (max-width:560px){
+                    padding: 18px;
+                    font-size: 24px;
+                }
+                @media (max-width:430px){
+                    padding: 12px;
+                    font-size: 18px;
+                } 
             }
             input{
                 height: 50px;
@@ -128,9 +163,9 @@
                 z-index: 1;
                 display: flex;
                 position: absolute; 
-                right: 20%;
-                @media (max-width:700px){
-                    
+                right: 20vw;
+                @media (max-width:600px){
+                    right: 40vw;
                 }
             }
 
