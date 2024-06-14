@@ -9,6 +9,7 @@ import Header from "@/components/header";
 import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import Magnetic from "@/components/Magnetic";
+import { Analytics } from "@vercel/analytics/react"
 
 
 export default function App({ Component, pageProps, router }) {
@@ -54,6 +55,7 @@ export default function App({ Component, pageProps, router }) {
     <AnimatePresence mode="wait">
       <Component key={router.route} {...pageProps} />
     </AnimatePresence>
+    <Analytics/>
   </>
   )
 }

@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './style.module.scss'
 import Link from 'next/link'
 import Magnetic from '../Magnetic'
+import Nav from '../nav'
+import { AnimatePresence } from 'framer-motion'
 
 const Navbar = () => {
+
+  const [isActive, setIsActive] = useState(false);
   return (
     <div className={styles.main}>
       <div className={styles.navbar}>
@@ -28,6 +32,13 @@ const Navbar = () => {
                 <div className={styles.indicator}></div>
             </div></Magnetic>
           </div>
+          <Magnetic>
+              <div className={styles.menuButton} onClick={() => setIsActive(!isActive)}>
+                <div className={styles.el}>Menu<div className={styles.indicator}></div></div>
+              </div>
+            </Magnetic>
+            <AnimatePresence mode='wait'>
+            { isActive && <Nav />}</AnimatePresence>
       </div>
     </div>
   )

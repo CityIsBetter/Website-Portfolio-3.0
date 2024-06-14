@@ -28,6 +28,9 @@
       display: flex;
       justify-content: flex-end;
       transform: translate(0%, -350%);
+      @media (max-width: 1200px){
+          display: none;
+        }
       .phraseSvg{
         display: flex;
         transform: translate(-50%, -150%);
@@ -38,9 +41,7 @@
         font-size: 24px;
         display: flex;
         max-width: 500px;
-        @media (max-width: 1200px){
-          display: none;
-        }
+        
         p{
         display: flex;
         flex-wrap: wrap;

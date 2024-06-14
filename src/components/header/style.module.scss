@@ -1,13 +1,8 @@
 .buttonContainer{
     position: fixed;
     right: 0; 
-    z-index: 100;
+    z-index: 12;
     transform: scale(0);
-    @media (max-width:700px) {
-        transform: scale(1);
-        width: 80px;
-        height: 80px;
-    }
 }
 .button{
     right: 0;

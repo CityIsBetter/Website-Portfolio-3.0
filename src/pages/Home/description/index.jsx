@@ -77,14 +77,18 @@ const Description = forwardRef(function index(props, ref) {
           </div>
           <Line scolor={`#000`} w={.85}/>
           <div ref={descriptionW} className={styles.contentWorks}>
-            <div data-scroll data-scroll-speed={0.1}>
-              <Link href={"/Works"}><Magnetic><div ref={ref} className={styles.button}>My Works</div></Magnetic> </Link>             
-            </div>            <p>{
+            <div className={styles.wTitle}>
+              My <br/>Projects
+            </div>
+                      <p>{
               phraseW.split(" ").map( (word, index) => {
                   return <span className={styles.mask} key={index}><motion.span variants={slideUp} custom={index} animate={isWInView ? "open" : "closed"} key={index}>{word}</motion.span></span>
               })
             }</p>
           </div>
+          <div data-scroll data-scroll-speed={0.1} className={styles.wButton}>
+              <Link href={"/Works"}><Magnetic><div ref={ref} className={styles.button}>My Works</div></Magnetic> </Link>             
+          </div>  
         </div>
     </div>
   )

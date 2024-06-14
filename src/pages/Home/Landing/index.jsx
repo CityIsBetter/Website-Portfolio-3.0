@@ -64,7 +64,7 @@ const Landing = () => {
       gsap.to(slider.current, {
         scrollTrigger: {
           trigger: document.documentElement,
-          scrub: 0.1,
+          scrub: 0.05,
           start: 0,
           end: window.innerHeight,
           onUpdate: e => direction = e.direction * -1
@@ -83,7 +83,7 @@ const Landing = () => {
       }
       gsap.set(firstText.current, {xPercent: xPercent});
       gsap.set(secondText.current, {xPercent: xPercent});
-      xPercent += 0.05 * direction;
+      xPercent += 0.03 * direction;
       requestAnimationFrame(animation);
     };
   
