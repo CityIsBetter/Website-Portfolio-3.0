@@ -75,6 +75,12 @@ const Line = ({scolor, sright, w}) => {
     }, []);
 
     const setPath = (progress) => {
+        var ww = window.innerWidth;
+        if(ww <= 700){
+          w = .9
+        } else{
+          w = .8;
+        }
         const width = w ? w * window.innerWidth : .75 * window.innerWidth;
         path.current.setAttributeNS(null, "d", `M 0 50 Q${width * x} ${50 + progress} ${width} 50`)
     };
@@ -93,7 +99,6 @@ const Line = ({scolor, sright, w}) => {
         if(Math.abs(progress) > 0.5){
             reqId = requestAnimationFrame(animateOut)
         }
-        //If the slope is almost flat, we stop the animation
         else{
         time = Math.PI / 2;
         progress = 0;

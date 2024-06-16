@@ -72,7 +72,7 @@
     }
     .location{
       position: absolute;
-      top: calc(50% - 40px);
+      top: calc(40%);
       @media (max-width:500px) {
         top: 15%;
       }

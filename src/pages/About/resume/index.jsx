@@ -68,37 +68,47 @@ const Resume = () => {
             <p className={styles.subTitle}>02 Certifications</p>
             <Line scolor={"#000"} w={.8}/>
             <table>
-              <td>
-                <tr>Python for Data Science</tr>
-                <tr>Programming in Java</tr>
-                <tr>Introduction to Database System</tr>
-                <tr>AWS Certified Machine Learning</tr>
-                <tr>Digital Image Processing</tr>
-                <tr>COmputer Visual Essentials</tr>
-                <tr>Image Processing Onramp</tr>
-                <tr>MATLAB Onramp</tr>
-              </td>
-              <td>
-                <tr>NPTEL</tr>
-                <tr>NPTEL</tr>
-                <tr>NPTEL</tr>
-                <tr>Amazon Web Services</tr>
-                <tr>Great Learning</tr>
-                <tr>Great Learning</tr>
-                <tr>MathWorks</tr>
-                <tr>MathWorks</tr>
-              </td>
-              <td>
-                <tr>2023</tr>
-                <tr>2023</tr>
-                <tr>2024</tr>
-                <tr>2024</tr>
-                <tr>2024</tr>
-                <tr>2024</tr>
-                <tr>2024</tr>
-                <tr>2024</tr>
-              </td>
-            </table>
+              <tr>
+                  <td>Python for Data Science</td>
+                  <td>NPTEL</td>
+                  <td>2023</td>
+              </tr>
+              <tr>
+                  <td>Programming in Java</td>
+                  <td>NPTEL</td>
+                  <td>2023</td>
+              </tr>
+              <tr>
+                  <td>Introduction to Database System</td>
+                  <td>NPTEL</td>
+                  <td>2024</td>
+              </tr>
+              <tr>
+                  <td>AWS Certified Machine Learning</td>
+                  <td>Amazon Web Services</td>
+                  <td>2024</td>
+              </tr>
+              <tr>
+                  <td>Digital Image Processing</td>
+                  <td>Great Learning</td>
+                  <td>2024</td>
+              </tr>
+              <tr>
+                  <td>Computer Vision Essentials</td>
+                  <td>Great Learning</td>
+                  <td>2024</td>
+              </tr>
+              <tr>
+                  <td>Image Processing Onramp</td>
+                  <td>MathWorks</td>
+                  <td>2024</td>
+              </tr>
+              <tr>
+                  <td>MATLAB Onramp</td>
+                  <td>MathWorks</td>
+                  <td>2024</td>
+              </tr>
+          </table>
             <p className={styles.proofText}>proofs in my <a href='https://www.linkedin.com/in/mahesh-paul/details/certifications/' target='_blank'>LinkedIn <svg width="12" height="12" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 24.5L24.5 1M24.5 1V24.5M24.5 1H1" stroke="black" stroke-width="2"/></svg></a></p>
           </div>
       </div>
