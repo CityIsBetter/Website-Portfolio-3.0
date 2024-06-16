@@ -208,7 +208,7 @@ const Contact = () => {
                 <a href='https://instagram.com/mahesh_paul_j' target='_blank'>Instagram</a>
             </Magnetic>
             <Magnetic>
-                <a href=''>Discord</a>
+                <a href='https://discordapp.com/users/509270434303311872' target='_blank'>Discord</a>
             </Magnetic>
             <Magnetic>
                 <a href='https://linkedin.com/in/mahesh-paul' target='_blank'>Linkedin</a>
