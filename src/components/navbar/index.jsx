@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from './style.module.scss'
 import Link from 'next/link'
+import Image from 'next/image'
 import Magnetic from '../Magnetic'
 import Nav from '../nav'
 import { AnimatePresence } from 'framer-motion'
@@ -12,7 +13,7 @@ const Navbar = () => {
     <div className={styles.main}>
       <div className={styles.navbar}>
           <div className={styles.logo}>
-            <Link href='/'><img alt="logo" src="/assets/Logo.png" draggable={false} /></Link>
+            <Link href='/'><Image alt="logo" src="/assets/Logo.png" draggable={false} width={290} height={50}/></Link>
           </div>
           <div className={styles.nav}>
           <Magnetic><div className={styles.el}>
