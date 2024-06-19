@@ -66,7 +66,7 @@ const Works = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <Curve backgroundColor={"#a7a6ba"}> */}
+      <Curve backgroundColor={"#a7a6ba"}>
       <main className={styles.main} ref={container}>
         <div className={styles.worksContainer}>
             <div className={styles.worksTitle}>Developing Innovative Ideas<br/> and Projects</div>
@@ -88,7 +88,7 @@ const Works = () => {
         <Work />
       </main>
       <Contact />
-      {/* </Curve> */}
+      </Curve>
     </>
   )
 }
