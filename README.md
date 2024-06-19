@@ -1,1 +1,1 @@
-# This portfolio is still in exprimental stage
+# This portfolio is still in experimental stage
