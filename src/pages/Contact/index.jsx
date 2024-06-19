@@ -191,13 +191,13 @@ const Contact = () => {
         }
       </div>
       <div className={styles.info}>
-        <div>
+        <div className={styles.v}>
             <span>
                 <h3>Version</h3>
                 <p>2024 © Edition</p>
             </span>
         </div>
-        <div>
+        <div className={styles.s}>
             <span>
                 <h3>socials</h3>
             <Magnetic>

@@ -71,7 +71,7 @@ const slider1 = [
         },
         {
             color: "#222222",
-            src: "/assets/canvas.gif"
+            src: "/assets/mockups/canvas.png"
         },
         {
             color: "#3B3A45",
@@ -102,7 +102,8 @@ const Slider = () => {
                                     <Image 
                                     fill={true}
                                     alt={"image"}
-                                    src={`${project.src}`}/>
+                                    src={`${project.src}`}
+                                    loading='eager'/>
                                 </div>
                             </div>
                         })
@@ -116,15 +117,13 @@ const Slider = () => {
                                     <Image 
                                     fill={true}
                                     alt={"image"}
-                                    src={`${project.src}`}/>
+                                    src={`${project.src}`}
+                                    loading='eager'/>
                                 </div>
                             </div>
                         })
                     }
                 </motion.div>
-                {/* <motion.div style={{height}} className={styles.circleContainer}>
-                    <div className={styles.circle}></div>
-                </motion.div> */}
         </div>
   )
 }
