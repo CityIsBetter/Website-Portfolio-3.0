@@ -27,7 +27,7 @@ const Main = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <Curve> */}
+      <Curve>
         <main className={styles.main}>
           <Landing /> 
           <Description />
@@ -36,7 +36,7 @@ const Main = () => {
             <div className={styles.circle}></div>
           </motion.div>
           <Contact/></main>
-      {/* </Curve> */}
+      </Curve>
     </>
   )
 }

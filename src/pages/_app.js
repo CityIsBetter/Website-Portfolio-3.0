@@ -48,9 +48,9 @@ export default function App({ Component, pageProps, router }) {
 
   return(
   <>
-    {/* <AnimatePresence mode="wait">
+    <AnimatePresence mode="wait">
       {isLoading && <Preloader />}
-    </AnimatePresence> */}
+    </AnimatePresence>
     <Navbar />
     <Header />
     <AnimatePresence mode="wait">
