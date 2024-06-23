@@ -17,30 +17,40 @@ const anim = (variants) => {
         variants,
         initial: "initial",
         animate: "enter",
-        exit: "exit"
+        exit: "exit",
+        transition: {
+            when: "beforeChildren"
+        }
     }
 }
 
-export default function Curve({children, backgroundColor}) {
+
+export default function Curve({children}) {
     const router = useRouter();
     const [dimensions, setDimensions] = useState({
         width: null,
         height: null
     })
 
-    useEffect( () => {
-        function resize(){
-            setDimensions({
-                width: window.innerWidth,
-                height: window.innerHeight
-            })
+    useEffect(() => {
+        let timeoutId;
+        function resize() {
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(() => {
+                setDimensions({
+                    width: window.innerWidth,
+                    height: window.innerHeight
+                });
+            }, 100); // Debounce by 100ms
         }
         resize();
-        window.addEventListener("resize", resize)
+        window.addEventListener("resize", resize);
         return () => {
+            clearTimeout(timeoutId);
             window.removeEventListener("resize", resize);
         }
-    }, [])
+    }, []);
+    
     
     return (
     <div className='main curve'>
