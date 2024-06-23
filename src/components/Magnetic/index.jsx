@@ -6,11 +6,10 @@ const Magnetic = ({ children }) => {
     const magnetic = useRef(null);
 
     useEffect(() => {
-        // Check if the code is running on the client side
         if (typeof window !== 'undefined') {
             const isMobileOrTablet = window.innerWidth <= 768;
 
-            if (!isMobileOrTablet) {
+            if (!isMobileOrTablet && magnetic.current) {
                 const xTo = gsap.quickTo(magnetic.current, "x", { duration: 1, ease: "elastic.out(1, 0.3)" });
                 const yTo = gsap.quickTo(magnetic.current, "y", { duration: 1, ease: "elastic.out(1, 0.3)" });
 
@@ -31,10 +30,11 @@ const Magnetic = ({ children }) => {
                 magnetic.current.addEventListener("mousemove", handleMouseMove);
                 magnetic.current.addEventListener("mouseleave", handleMouseLeave);
 
-                // Cleanup event listeners on component unmount
                 return () => {
-                    magnetic.current.removeEventListener("mousemove", handleMouseMove);
-                    magnetic.current.removeEventListener("mouseleave", handleMouseLeave);
+                    if (magnetic.current) {
+                        magnetic.current.removeEventListener("mousemove", handleMouseMove);
+                        magnetic.current.removeEventListener("mouseleave", handleMouseLeave);
+                    }
                 };
             }
         }

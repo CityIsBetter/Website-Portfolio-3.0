@@ -17,10 +17,7 @@ const anim = (variants) => {
         variants,
         initial: "initial",
         animate: "enter",
-        exit: "exit",
-        transition: {
-            when: "beforeChildren"
-        }
+        exit: "exit"
     };
 };
 
@@ -80,7 +77,7 @@ const SVG = memo(({ width, height }) => {
     `;
 
     return (
-        <motion.svg {...anim(translate)} className="psvg enter">
+        <motion.svg {...anim(translate)} className="psvg">
             <motion.path {...anim(curve(initialPath, targetPath))} />
         </motion.svg>
     );

@@ -27,7 +27,7 @@ const Resume = () => {
             <span> Python, Java, C, C++,  Web Development(HTML, JS, CSS, ReactJS, NodeJS, NextJS)</span> and <span>AI/ML</span> gained through coursework and personal projects.</p>
             <div className="" data-scroll data-scroll-speed={0.05}>
             <Magnetic>
-              <div backgroundColor={"#334BD3"} className={styles.button} >Resume</div>
+              <div backgroundColor={"#334BD3"} className={styles.button} ><a href='/assets/resume.pdf' target='_blank'>Resume</a></div>
             </Magnetic></div>
           </div>
           <div className={styles.skillText}>

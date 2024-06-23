@@ -5,15 +5,15 @@ export const text = {
     enter: {
         opacity: 0,
         top: -100,
-        transition: { duration: 0.5, delay: 0.2, ease: "easeInOut" },
-        transitionEnd: { top: "47.5%" }
+        transition: {duration: .75, delay: .35, ease: [0.76, 0, 0.24, 1]},
+        transitionEnd: {top: "47.5%",}
     },
     exit: {
         opacity: 1,
         top: "40%",
-        transition: { duration: 0.4, delay: 0.2, ease: "easeInOut" }
+        transition: {duration: .5, delay: .4, ease: [0.33, 1, 0.68, 1]}
     }
-};
+}
 
 export const curve = (initialPath, targetPath) => {
     return {
@@ -22,28 +22,28 @@ export const curve = (initialPath, targetPath) => {
         },
         enter: {
             d: targetPath,
-            transition: { duration: 0.5, delay: 0.2, ease: "easeInOut" }
+            transition: {duration: .75, delay: .35, ease: [0.76, 0, 0.24, 1]}
         },
         exit: {
             d: initialPath,
-            transition: { duration: 0.5, ease: "easeInOut" }
+            transition: {duration: .75, ease: [0.76, 0, 0.24, 1]}
         }
-    };
-};
+    }
+}
 
 export const translate = {
     initial: {
-        transform: "translateY(-300px)"
+        top: "-300px"
     },
     enter: {
-        transform: "translateY(-100vh)",
-        transition: { duration: 0.5, delay: 0.2, ease: "easeInOut" },
-        transitionEnd: {
-            transform: "translateY(100vh)"
+        top: "-100vh",
+        transition: {duration: .75, delay: .35, ease: [0.76, 0, 0.24, 1]},
+        transitionEnd : {
+            top: "100vh"
         }
     },
     exit: {
-        transform: "translateY(-300px)",
-        transition: { duration: 0.5, ease: "easeInOut" }
+        top: "-300px",
+        transition: {duration: .75, ease: [0.76, 0, 0.24, 1]}
     }
-};
+}

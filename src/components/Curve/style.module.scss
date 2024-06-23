@@ -1,5 +1,5 @@
-.curve {
-    .psvg, .background {
+.curve{
+    .psvg, .background{
         position: fixed;
         height: calc(100vh + 600px);
         width: 100vw;
@@ -7,13 +7,12 @@
         left: 0;
         top: 0;
         z-index: 100;
-        will-change: transform, opacity;
     }
-    .background {
+    .background{
         background: black;
         transition: opacity 0s linear 0.1s;
     }
-    .route {
+    .route{
         z-index: 200;
         position: absolute;
         left: 50%;
@@ -22,10 +21,5 @@
         font-size: 46px;
         transform: translateX(-50%);
         text-align: center;
-        will-change: opacity, transform;
-    }
-    .psvg.enter {
-        opacity: 1; /* Show when animating */
-        transition: opacity 0.75s ease;
     }
 }
