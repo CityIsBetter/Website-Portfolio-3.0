@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, memo } from 'react'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router';
 import { text, curve, translate } from './anim';
@@ -66,7 +66,7 @@ export default function Curve({children}) {
     )
 }
 
-const SVG = ({width, height}) => {
+const SVG = memo(({width, height}) => {
 
     const initialPath = `
         M0 300 
@@ -88,4 +88,4 @@ const SVG = ({width, height}) => {
             <motion.path {...anim(curve(initialPath, targetPath))} />
         </motion.svg>
     )
-}
+});
