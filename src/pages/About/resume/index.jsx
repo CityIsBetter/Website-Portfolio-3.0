@@ -26,9 +26,10 @@ const Resume = () => {
             <p>Tech Enthusiast CS <span>student</span> at SRM University, Kattankulathur with a passion for technology. Possesses strong foundational skills in
             <span> Python, Java, C, C++,  Web Development(HTML, JS, CSS, ReactJS, NodeJS, NextJS)</span> and <span>AI/ML</span> gained through coursework and personal projects.</p>
             <div className="" data-scroll data-scroll-speed={0.05}>
-            <Magnetic>
-              <div backgroundColor={"#334BD3"} className={styles.button} ><a href='/assets/resume.pdf' target='_blank'>Resume</a></div>
-            </Magnetic></div>
+            <a href='/assets/resume.pdf' target='_blank'><Magnetic>
+              <div backgroundColor={"#334BD3"} className={styles.button} >Resume</div>
+            </Magnetic></a>
+          </div>
           </div>
           <div className={styles.skillText}>
             <p className={styles.subTitle}>01 Skills</p>

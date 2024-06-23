@@ -81,6 +81,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            color: white;
             margin-right: 10%;
             cursor: pointer;
             transition: box-shadow 0.4s;
@@ -96,9 +97,6 @@
                             0px 0px 0px 2px rgba(255, 255, 255, 0.2),
                             0px 0px 90px 0px #334BD3;
                 background: linear-gradient(0deg,#455CE9,#334BD3);         
-              }
-              a{
-                color: white;
               }
         }        
     }
