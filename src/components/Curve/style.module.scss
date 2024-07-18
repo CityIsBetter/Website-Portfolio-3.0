@@ -1,28 +1,25 @@
-.stairs{
-    .transition-container{
+.curve{
+    .psvg, .background{
         position: fixed;
+        height: calc(100vh + 600px);
         width: 100vw;
-        height: 100vh;
-        display: flex;
+        pointer-events: none;
         left: 0;
         top: 0;
-        pointer-events: none;
         z-index: 100;
-        div{
-            position: relative;
-            height: 100%;
-            width: 100%;
-            background-color: black;
-        }
     }
-    .transition-background{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: black;
+    .background{
+        background: black;
+        transition: opacity 0s linear 0.1s;
+    }
+    .route{
         z-index: 200;
-        pointer-events: none;
-        top: 0;
-        left: 0;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        color: white;
+        font-size: 46px;
+        transform: translateX(-50%);
+        text-align: center;
     }
 }

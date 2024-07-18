@@ -113,6 +113,9 @@ const Resume = () => {
             <p className={styles.proofText}>proofs in my <a href='https://www.linkedin.com/in/mahesh-paul/details/certifications/' target='_blank'>LinkedIn <svg width="12" height="12" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 24.5L24.5 1M24.5 1V24.5M24.5 1H1" stroke="black" stroke-width="2"/></svg></a></p>
           </div>
       </div>
+      <motion.div style={{height}} className={styles.circleContainer}>
+        <div className={styles.circle}></div>
+      </motion.div>
     </div>
   )
 }

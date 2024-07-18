@@ -32,6 +32,9 @@ const Main = () => {
           <Landing /> 
           <Description />
           <Slider />
+          <motion.div style={{height}} className={styles.circleContainer}>
+            <div className={styles.circle}></div>
+          </motion.div>
           <Contact/>
         </main>
       </Curve>

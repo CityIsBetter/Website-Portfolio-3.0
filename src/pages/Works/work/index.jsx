@@ -180,6 +180,10 @@ const Work = () => {
             <Magnetic><div className={styles.archBtn}>Archive</div></Magnetic>
         </div>
         </div>
+        
+        <motion.div style={{height}} className={styles.circleContainer}>
+                <div className={styles.circle}></div>
+        </motion.div>
     </div>
   )
 }
