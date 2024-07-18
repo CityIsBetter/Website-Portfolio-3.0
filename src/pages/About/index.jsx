@@ -36,7 +36,7 @@ const About = () => {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/favicon.ico" />
     </Head>
-    {/* <Curve>  */}
+    <Curve> 
       <div className={styles.about}>
         <div className={styles.aboutContainer}>
           <div className={styles.heading}>About <span>Mahesh Paul</span></div>
@@ -73,7 +73,7 @@ const About = () => {
       </div>
       <Resume />
       <Contact />
-    {/* </Curve> */}
+    </Curve>
     </>
   )
 }
