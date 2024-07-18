@@ -1,25 +1,28 @@
-.curve{
-    .psvg, .background{
+.stairs{
+    .transition-container{
         position: fixed;
-        height: calc(100vh + 600px);
         width: 100vw;
-        pointer-events: none;
+        height: 100vh;
+        display: flex;
         left: 0;
         top: 0;
+        pointer-events: none;
         z-index: 100;
+        div{
+            position: relative;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+        }
     }
-    .background{
-        background: black;
-        transition: opacity 0s linear 0.1s;
-    }
-    .route{
+    .transition-background{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
         z-index: 200;
-        position: absolute;
-        left: 50%;
-        top: 40%;
-        color: white;
-        font-size: 46px;
-        transform: translateX(-50%);
-        text-align: center;
+        pointer-events: none;
+        top: 0;
+        left: 0;
     }
 }

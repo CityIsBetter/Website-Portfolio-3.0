@@ -19,9 +19,19 @@
 
       .worksTitle {
           color: white;
-          font-size: 10vw;
+          font-size: 96px;
           font-weight: 100;
           margin-bottom: 12px;
+
+          @media (max-width: 868px){
+            font-size: 64px;
+          }
+          @media (max-width: 600px){
+            font-size: 52px;
+          }
+          @media (max-width: 450px){
+            font-size: 42px;
+          }
       }
 
       .buttonContainer {

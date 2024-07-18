@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import Magnetic from '@/components/Magnetic';
 import { usePathname } from 'next/navigation';
 import { menuSlide } from '../header/anim';
-import Curve from './curve';
 
 import Router from 'next/router'
 
@@ -94,7 +93,6 @@ const Nav = ({close}) => {
                 <Magnetic><a href='https://linkedin.com/in/mahesh-paul' target='_blank'>LinkedIn</a></Magnetic>   
             </div>
         </div>
-        <Curve />
     </motion.div>
   )
 }
